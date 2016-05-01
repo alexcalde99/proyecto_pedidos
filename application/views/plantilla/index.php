@@ -56,7 +56,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="logo">
-                                    <a href="#"><img src="images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
+                                    <a href="#"><img src="<?php echo base_url(); ?>assets/images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -93,7 +93,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                             <br><br>eget tellus luctus fermentum.</p>
                             <a href="single-post.html">Shop Now</a>
                         </div>
-                      <img src="images/slide1.jpg" alt="" />
+                      <img src="<?php echo base_url(); ?>assets/images/slide1.jpg" alt="" />
                     </li>
                     <li>
                         <div class="slider-caption">
@@ -102,7 +102,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                             <br><br>consectetur tempor neque vitae iaculis. Aliquam erat volutpat.</p>
                             <a href="single-post.html">More Details</a>
                         </div>
-                      <img src="images/slide2.jpg" alt="" />
+                      <img src="<?php echo base_url(); ?>assets/images/slide2.jpg" alt="" />
                     </li>
                     <li>
                         <div class="slider-caption">
@@ -111,7 +111,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                             <br><br>ornare massa, quis dapibus quam condimentum id.</p>
                             <a href="single-post.html">Get Ready</a>
                         </div>
-                      <img src="images/slide3.jpg" alt="" />
+                      <img src="<?php echo base_url(); ?>assets/images/slide3.jpg" alt="" />
                     </li>
                   </ul>
                 </div>
@@ -124,7 +124,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-12">
                             <div class="heading-section">
                                 <h2>Free Website Templates</h2>
-                                <img src="images/under-heading.png" alt="" >
+                                <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-12">
                             <div class="heading-section">
                                 <h2>Latest blog posts</h2>
-                                <img src="images/under-heading.png" alt="" >
+                                <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
                     </div>
@@ -187,7 +187,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="images/blogpost1.jpg" alt="" />
+                                    <img src="<?php echo base_url(); ?>assets/images/blogpost1.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -203,7 +203,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="images/blogpost2.jpg" alt="" />
+                                    <img src="<?php echo base_url(); ?>assets/images/blogpost2.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -219,7 +219,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="images/blogpost3.jpg" alt="" />
+                                    <img src="<?php echo base_url(); ?>assets/images/blogpost3.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -235,7 +235,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="images/blogpost4.jpg" alt="" />
+                                    <img src="<?php echo base_url(); ?>assets/images/blogpost4.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -251,7 +251,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="images/blogpost5.jpg" alt="" />
+                                    <img src="<?php echo base_url(); ?>assets/images/blogpost5.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -267,7 +267,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="images/blogpost6.jpg" alt="" />
+                                    <img src="<?php echo base_url(); ?>assets/images/blogpost6.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -291,7 +291,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-12">
                             <div class="heading-section">
                                 <h2>What Customers Say</h2>
-                                <img src="images/under-heading.png" alt="" >
+                                <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
                     </div>
@@ -376,7 +376,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     <h4 class="footer-title">Recent posts</h4>
                                     <div class="recent-post">
                                         <div class="recent-post-thumb">
-                                            <img src="images/recent-post1.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/images/recent-post1.jpg" alt="">
                                         </div>
                                         <div class="recent-post-info">
                                             <h6><a href="#">Delicious and Healthy Menus</a></h6>
@@ -385,7 +385,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     </div>
                                     <div class="recent-post">
                                         <div class="recent-post-thumb">
-                                            <img src="images/recent-post2.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/images/recent-post2.jpg" alt="">
                                         </div>
                                         <div class="recent-post-info">
                                             <h6><a href="#">Simple and effective meals</a></h6>
