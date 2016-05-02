@@ -117,7 +117,17 @@ http://www.templatemo.com/free-website-templates/417-grill
                 </div>
             </div>
 
+            <div>
+                <?php
+                foreach($restaurantes as $restaurante){
+                    //del restarante cojemos el nombre telefono etc......
+                    echo $restaurante->nombre;
+                    echo $restaurante->direccion;
 
+                }
+
+                ?>
+            </div>
             <div id="services">
                 <div class="container">
                     <div class="row">
