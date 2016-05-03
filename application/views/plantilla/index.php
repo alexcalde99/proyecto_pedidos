@@ -118,15 +118,7 @@ http://www.templatemo.com/free-website-templates/417-grill
             </div>
 
             <div>
-                <?php
-                foreach($restaurantes as $restaurante){
-                    //del restarante cojemos el nombre telefono etc......
-                    echo $restaurante->nombre;
-                    echo $restaurante->direccion;
 
-                }
-
-                ?>
             </div>
             <div id="services">
                 <div class="container">
@@ -188,32 +180,44 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Latest blog posts</h2>
+                                <h2>NUESTROS RESTAURANTES</h2>
                                 <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
                     </div>
+
+                    <!--********RESTAURANTES
+                    //se genera automaticamente desde la base de datos
+                    -->
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <?php
+                        foreach($restaurantes as $restaurante){
+                            //del restarante cojemos el nombre telefono etc......
+                            echo "<div class=\"col-md-4 col-sm-6\">";
+                            echo "<div class=\"blog-post\">";
+                            echo "<div class=\"blog-thumb\">";
+                            echo '<img src="'.base_url()."/".$restaurante->imagen.'">'."\n";
+                            echo "</div>";
+                            echo " <div class=\"blog-content\">";
+                            echo "<div class=\"content-show\">";
+                            echo "<h4><a href=\"single-post.html\">$restaurante->nombre</a></h4>";
+                            echo "<span>$restaurante->direccion;</span>";
+                            echo "<span>$restaurante->telefono;</span>";
+                            echo "</div>";
+                            echo "<div class=\"content-hide\">";
+                            echo "<p>Sed egestas  non pulvinar felis sollicitudin.</p>";
+                            echo "</div>";
+                            echo "</div>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
+
+                        ?>
+
+                       <!-- <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/blogpost1.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="single-post.html">Summer Sandwich</a></h4>
-                                        <span>29 Sep 2084</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/blogpost2.jpg" alt="" />
+                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost2.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -225,11 +229,11 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
+                        </div>-->
+                       <!-- <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/blogpost3.jpg" alt="" />
+                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost3.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -241,11 +245,11 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
+                        </div>-->
+                       <!-- <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/blogpost4.jpg" alt="" />
+                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost4.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -257,11 +261,11 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
+                        </div>-->
+                       <!-- <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/blogpost5.jpg" alt="" />
+                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost5.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -273,11 +277,11 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
+                        </div>-->
+                      <!--  <div class="col-md-4 col-sm-6">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/blogpost6.jpg" alt="" />
+                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost6.jpg" alt="" />
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
@@ -289,7 +293,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
