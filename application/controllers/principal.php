@@ -25,7 +25,6 @@ class principal extends CI_Controller
 
         //libreries
         $this->load->helper('url');
-        /*$this->load->library('grocery_CRUD');*/
         $this->load->database();
         $this->load->library('encrypt');
         $this->load->library('session');
@@ -40,22 +39,7 @@ class principal extends CI_Controller
         $this->load->view('/plantilla/index',$datos);
     }
 
-    //**********************FUNCION LISTAR RESTAURANTES*******************************
-    public function listar_Restaurantes(){
 
-        $crud = new Grocery_CRUD();
-        $datos = $crud->render();
-        $this->cargarVista($datos);
-
-
-    }
-
-
-    //**********************FUNCION QUE CARGA LOS RESULTADOS**********************
-    public function cargarVista($datos){
-        //cargamos la vista ejemplo y le pasamos los datos recogidos
-        $this->load->view('example.php',$datos);
-    }
 
 
 }
