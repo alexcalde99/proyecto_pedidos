@@ -24,7 +24,7 @@
 			<div class="box-header">
 				<h2>Log In</h2>
 			</div>
-			<form action="pur.php" method="post">
+			<form action="<?php echo site_url('admin/validar_Usuario')?>" method="POST">
 			<h4>Usuario</h4>
 				<input type="text" name="usuario" required>
 				<h4>Password</h4>

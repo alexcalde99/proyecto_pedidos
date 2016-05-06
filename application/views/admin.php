@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <?php
 
     if (!isset($css_files)) {
@@ -48,6 +49,7 @@
             </div>
             <!-- end navbar-header -->
             <!-- navbar-top-links -->
+
             <ul class="nav navbar-top-links navbar-right">
                 <!-- main dropdown -->
 
@@ -87,7 +89,12 @@
                                 <img src="assets/img/user.jpg" alt="">
                             </div>
                             <div class="user-info">
-                                <div>Jonny <strong>Deen</strong></div>
+                                <?php
+                                if (isset($user)) {
+                                    echo " <div>$user</div>"." ";
+                                }
+                                ?>
+
                                 <div class="user-text-online">
                                     <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
                                 </div>
@@ -108,7 +115,16 @@
                         <!--end search section-->
                     </li>
                     <li class="selected">
-                        <a href="<?php echo site_url('admin/restaurantes')?>"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+                        <a href="<?php echo site_url('admin/restaurantes')?>"><i class="fa fa-dashboard fa-fw"></i>Restaurantes</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('admin/productos')?>"><i class="fa fa-flask fa-fw"></i>Productos</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('admin/categorias')?>"><i class="fa fa-flask fa-fw"></i>Categorias</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('admin/usuarios')?>"><i class="fa fa-flask fa-fw"></i>Usuarios</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
@@ -122,9 +138,7 @@
                         </ul>
                         <!-- second-level-items -->
                     </li>
-                     <li>
-                        <a href="timeline.html"><i class="fa fa-flask fa-fw"></i>Timeline</a>
-                    </li>
+
                     <li>
                         <a href="tables.html"><i class="fa fa-table fa-fw"></i>Tables</a>
                     </li>
@@ -215,7 +229,12 @@
                 <!-- Welcome -->
                 <div class="col-lg-12">
                     <div class="alert alert-info">
-                        <i class="fa fa-folder-open"></i><b>&nbsp;Hola! </b>Bienvenido<b>Jonny Deen </b>
+                        <i class="fa fa-folder-open"></i><b>&nbsp;Hola! </b>Bienvenido<b>
+                            <?php
+                            if (isset($user)) {
+                                echo " "."<span style='color: orangered'>$user</span>";
+                            }
+                            ?></b>
 
                     </div>
                 </div>

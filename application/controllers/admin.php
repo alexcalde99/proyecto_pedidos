@@ -24,7 +24,7 @@ class admin extends CI_Controller {
 	}
 
 	public function index()	{
-		$this->load->view('admin');
+		$this->load->view('login');
 	}
 
 
@@ -57,6 +57,29 @@ class admin extends CI_Controller {
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
+	}
+	//**********************FUNCION LISTAR usuarios*******************************
+	public function usuarios(){
+
+		$crud = new Grocery_CRUD();
+		//primer campo, el nombre que tenemos en la tabla en la bdd
+		//$crud->set_field_upload('imagen','assets/images/');
+		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
+		//$crud->set_relation('id_categoria','categorias','descripcion');
+		$datos = $crud->render();
+		$this->cargarVista($datos);
+
+	}
+	//**********************FUNCION LISTAR usuarios*******************************
+	public function productos(){
+
+		$crud = new Grocery_CRUD();
+		//primer campo, el nombre que tenemos en la tabla en la bdd
+		//$crud->set_field_upload('imagen','assets/images/');
+		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
+		//$crud->set_relation('id_categoria','categorias','descripcion');
+		$datos = $crud->render();
+		$this->cargarVista($datos);
 
 	}
 
@@ -67,7 +90,33 @@ class admin extends CI_Controller {
 	}
 
 
-	public function offices_management()
+	//*********************FUNCION VALIDAR USUARIO*************************
+	public function validar_Usuario() {
+		//cargamos el modelo
+		$this->load->model('usuario_model');
+		//recogemos los valores del formulario
+		$usuario = $this->input->post('usuario');
+		$password = $this->input->post('password');
+		//Llamamos a la funcion validar usuario del modelo, le pasamos los dos datos, nos devolerá true si es correcto,
+		//devolverá false si el usuario no existe
+		if ($this->usuario_model->validarUsuari($usuario, $password) == true) {
+			//Metemos en un array los datos del usuario y lo pasamos a la vista
+			$datos = array(
+					'user' => $usuario,
+					'output' =>""
+			);
+			$this->load->view('admin', $datos);
+		} else {
+			//si no es correcto, llamamos a la funcion index(); que nos volvera a cargar la vist del login
+			$this->index();
+		}
+	}
+
+
+
+
+
+	/*public function offices_management()
 	{
 		try{
 			$crud = new grocery_CRUD();
@@ -281,6 +330,6 @@ class admin extends CI_Controller {
 		} else {
 			return $output;
 		}
-	}
+	}*/
 
 }

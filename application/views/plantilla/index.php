@@ -196,7 +196,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                             echo "<div class=\"col-md-4 col-sm-6\">";
                             echo "<div class=\"blog-post\">";
                             echo "<div class=\"blog-thumb\">";
-                            echo '<img src="'.base_url()."/assets/images/".$restaurante->imagen.'">'."\n";
+                            echo '<img src="'.base_url().$restaurante->imagen.'">'."\n";
                             echo "</div>";
                             echo " <div class=\"blog-content\">";
                             echo "<div class=\"content-show\">";
