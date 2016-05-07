@@ -125,7 +125,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Free Website Templates</h2>
+                                <h2>Pedidos a un click</h2>
                                 <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -136,7 +136,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                 <div class="icon">
                                     <i class="fa fa-pencil"></i>
                                 </div>
-                                <h4>Make an order</h4>
+                                <h4>Haz tu pedido</h4>
                                 <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
                                 </div>
-                                <h4>Promotions</h4>
+                                <h4>Promociones</h4>
                                 <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
                             </div>
                         </div>
@@ -154,7 +154,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                 <div class="icon">
                                     <i class="fa fa-bell"></i>
                                 </div>
-                                <h4>Ready to Serve</h4>
+                                <h4>Recíbelo en casa</h4>
                                 <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
                             </div>
                         </div>
@@ -163,7 +163,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                 <div class="icon">
                                     <i class="fa fa-heart"></i>
                                 </div>
-                                <h4>Satisfaction</h4>
+                                <h4>Satisfacción</h4>
                                 <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
                             </div>
                         </div>
@@ -196,16 +196,17 @@ http://www.templatemo.com/free-website-templates/417-grill
                             echo "<div class=\"col-md-4 col-sm-6\">";
                             echo "<div class=\"blog-post\">";
                             echo "<div class=\"blog-thumb\">";
-                            echo '<img src="'.base_url().$restaurante->imagen.'">'."\n";
+                            echo '<img src="'.base_url()."assets/images/".$restaurante->imagen.'">'."\n";
                             echo "</div>";
                             echo " <div class=\"blog-content\">";
                             echo "<div class=\"content-show\">";
-                            echo "<h4><a href=\"single-post.html\">$restaurante->nombre</a></h4>";
-                            echo "<span>$restaurante->direccion;</span>";
-                            echo "<span>$restaurante->telefono;</span>";
+                            echo "<h4><a style='text-decoration: underline' href=''>$restaurante->nombre</a></h4>";
+                            echo "<span>$restaurante->direccion</span>";
+                            echo "<br>";
+                            echo "<span>$restaurante->telefono</span>";
                             echo "</div>";
                             echo "<div class=\"content-hide\">";
-                            echo "<p>Sed egestas  non pulvinar felis sollicitudin.</p>";
+                            echo "<p>$restaurante->descripcion</p>";
                             echo "</div>";
                             echo "</div>";
                             echo "</div>";
@@ -344,8 +345,8 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="subscribe-form">
-                                    <span>Get in touch with us</span>
-                                    <form method="get" class="subscribeForm">
+                                    <span>Suscríbete a nuestro newsletter</span>
+                                    <form method="POST" class="subscribeForm">
                                         <input id="subscribe" type="text" />
                                         <input type="submit" id="submitButton" />
                                     </form>

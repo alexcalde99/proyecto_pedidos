@@ -41,6 +41,8 @@ class admin extends CI_Controller {
 		$crud->set_field_upload('imagen','assets/images/');
 		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
 		$crud->set_relation('id_categoria','categorias','descripcion');
+		//$crud->required_fields('nombre','direccion','telefono','id_categoria');
+		$crud->display_as('imagen','Imagen(373x253)');
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
@@ -50,10 +52,7 @@ class admin extends CI_Controller {
 	public function categorias(){
 
 		$crud = new Grocery_CRUD();
-		//primer campo, el nombre que tenemos en la tabla en la bdd
-		//$crud->set_field_upload('imagen','assets/images/');
-		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
-		//$crud->set_relation('id_categoria','categorias','descripcion');
+
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
@@ -74,10 +73,12 @@ class admin extends CI_Controller {
 	public function productos(){
 
 		$crud = new Grocery_CRUD();
-		//primer campo, el nombre que tenemos en la tabla en la bdd
-		//$crud->set_field_upload('imagen','assets/images/');
-		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
-		//$crud->set_relation('id_categoria','categorias','descripcion');
+		$crud->set_table('productos');
+		$crud->display_as('id_restaurante','Restaurante');
+		//Subject.  lo que saldra al lado del add-> add Restaurates
+		$crud->set_subject('Restaurantes');
+		//Id de la tabla, tabla, y campo que qeremos que sea selecionado en el desplegable
+		$crud->set_relation('id_restaurante','restaurantes','nombre');
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
