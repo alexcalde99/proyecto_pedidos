@@ -7,6 +7,8 @@ class admin extends CI_Controller {
 		parent::__construct();
 
 		$this->load->database();
+		//cargamos la libreria de session
+		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->library('grocery_CRUD');
 	}
@@ -37,6 +39,7 @@ class admin extends CI_Controller {
 	public function restaurantes(){
 
 		$crud = new Grocery_CRUD();
+		$crud->set_subject('Restaurantes');
 		//primer campo, el nombre que tenemos en la tabla en la bdd
 		$crud->set_field_upload('imagen','assets/images/');
 		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
@@ -46,13 +49,12 @@ class admin extends CI_Controller {
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
-
 	}
 //**********************FUNCION LISTAR CATEGIRIAS*******************************
 	public function categorias(){
 
 		$crud = new Grocery_CRUD();
-
+		$crud->set_subject('Categorias');
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
@@ -61,6 +63,7 @@ class admin extends CI_Controller {
 	public function usuarios(){
 
 		$crud = new Grocery_CRUD();
+		$crud->set_subject('Usuarios');
 		//primer campo, el nombre que tenemos en la tabla en la bdd
 		//$crud->set_field_upload('imagen','assets/images/');
 		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
@@ -74,9 +77,10 @@ class admin extends CI_Controller {
 
 		$crud = new Grocery_CRUD();
 		$crud->set_table('productos');
+		//display as_ relacionamos las tablas, un producto pertenece  a un restaurante
 		$crud->display_as('id_restaurante','Restaurante');
 		//Subject.  lo que saldra al lado del add-> add Restaurates
-		$crud->set_subject('Restaurantes');
+		$crud->set_subject('Productos');
 		//Id de la tabla, tabla, y campo que qeremos que sea selecionado en el desplegable
 		$crud->set_relation('id_restaurante','restaurantes','nombre');
 		$datos = $crud->render();
@@ -102,6 +106,8 @@ class admin extends CI_Controller {
 		//devolverá false si el usuario no existe
 		if ($this->usuario_model->validarUsuari($usuario, $password) == true) {
 			//Metemos en un array los datos del usuario y lo pasamos a la vista
+			//grabamos la variaboe de session
+			$this->session->set_userdata('usuario', $usuario);
 			$datos = array(
 					'user' => $usuario,
 					'output' =>""
@@ -111,6 +117,11 @@ class admin extends CI_Controller {
 			//si no es correcto, llamamos a la funcion index(); que nos volvera a cargar la vist del login
 			$this->index();
 		}
+	}
+
+	public function logout(){
+		$this->session->unset_userdata('usuario');
+		header("Location: http://localhost:8080/proyecto_DAW/admin");
 	}
 
 

@@ -19,8 +19,9 @@ class principal extends CI_Controller
 
         date_default_timezone_set('Europe/Madrid');
 
-        //models que gastem
+        //models que usaremos
         $this->load->model('restaurante_model');
+        $this->load->model('producto_model');
 
 
         //libreries
@@ -41,5 +42,13 @@ class principal extends CI_Controller
 
 
 
+    public function listadoProductos($id){
+
+        $productos = $this->producto_model->getAllProductsByID($id);
+        //le pasamos el resultado en un array
+        $datos['productos']=$productos;
+        $this->load->view('/plantilla/productos',$datos);
+
+    }
 
 }

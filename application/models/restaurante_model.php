@@ -25,13 +25,5 @@ class restaurante_model extends CI_Model{
         }
     }
 
-    /*public function getNumIncidencias() {
-        $sql = "SELECT * FROM incidencias ORDER BY fecha_alta DESC ";
-        $query = $this->db->query($sql);
-        if ($query->num_rows() > 0) {
-            return $query->num_rows();
-        }
-    }*/
-}
-?>
+
 }
