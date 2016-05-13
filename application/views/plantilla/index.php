@@ -32,7 +32,10 @@ http://www.templatemo.com/free-website-templates/417-grill
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-            <header>
+        <!-- *****INCLUDE HEADER PHP -->
+        <?php include "header.php"; ?>
+
+            <!--<header>
                 <div id="top-header">
                     <div class="container">
                         <div class="row">
@@ -56,7 +59,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="logo">
-                                    <a href="#"><img src="<?php echo base_url(); ?>assets/images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
+                                    <a href="#"><img src="<?php /*echo base_url(); */?>assets/images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -80,7 +83,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         </div>
                     </div>
                 </div>
-            </header>
+            </header>-->
             
 
             <div id="slider">
@@ -231,70 +234,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                 </div>
                             </div>
                         </div>-->
-                       <!-- <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost3.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="single-post.html">Spicy Pizza</a></h4>
-                                        <span>14 Sep 2084</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-                       <!-- <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost4.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="single-post.html">Healthy Food</a></h4>
-                                        <span>25 Aug 2084</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-                       <!-- <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost5.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="single-post.html">Great Breakfast</a></h4>
-                                        <span>17 Aug 2084</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-                      <!--  <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost6.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="single-post.html">Fresh Fruit Juice</a></h4>
-                                        <span>12 Aug 2084</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
+
                     </div>
                 </div>
             </div>
@@ -305,7 +245,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>What Customers Say</h2>
+                                <h2>Que dicen de nosotros</h2>
                                 <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -339,98 +279,8 @@ http://www.templatemo.com/free-website-templates/417-grill
                 </div>
             </div>
 
-			<footer>
-                <div class="container">
-                    <div class="top-footer">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="subscribe-form">
-                                    <span>Suscríbete a nuestro newsletter</span>
-                                    <form method="POST" class="subscribeForm">
-                                        <input id="subscribe" type="text" />
-                                        <input type="submit" id="submitButton" />
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="social-bottom">
-                                    <span>Follow us:</span>
-                                    <ul>
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-rss"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-footer">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="about">
-                                    <h4 class="footer-title">About Grill</h4>
-                                    <p>Grill is free HTML5 template by <span class="blue">template</span><span class="green">mo</span> and it is a free responsive bootstrap layout that can be applied for any purpose.
-                                    <br><br>Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for photos used in this template. Nam commodo erat quis ligula placerat viverra.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shop-list">
-                                    <h4 class="footer-title">Shop Categories</h4>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>New Grill Menu</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Healthy Fresh Juices</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Spicy Delicious Meals</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Simple Italian Pizzas</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Pure Good Yogurts</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Ice-cream for kids</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="recent-posts">
-                                    <h4 class="footer-title">Recent posts</h4>
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="<?php echo base_url(); ?>assets/images/recent-post1.jpg" alt="">
-                                        </div>
-                                        <div class="recent-post-info">
-                                            <h6><a href="#">Delicious and Healthy Menus</a></h6>
-                                            <span>24/12/2084</span>
-                                        </div>
-                                    </div>
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="<?php echo base_url(); ?>assets/images/recent-post2.jpg" alt="">
-                                        </div>
-                                        <div class="recent-post-info">
-                                            <h6><a href="#">Simple and effective meals</a></h6>
-                                            <span>18/12/2084</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="more-info">
-                                    <h4 class="footer-title">More info</h4>
-                                    <p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.</p>
-                                    <ul>
-                                        <li><i class="fa fa-phone"></i>010-020-0340</li>
-                                        <li><i class="fa fa-globe"></i>123 Dagon Studio, Yakin Street, Digital Estate</li>
-                                        <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom-footer">
-                        <p>
-                        	<span>Copyright © 2084 <a href="#">Your Company Name</a> 
-                            | Design: <a rel="nofollow" href="http://www.templatemo.com" target="_parent"><span class="blue">template</span><span class="green">mo</span></a></span>
-                        </p>
-                    </div>
-                    
-                </div>
-            </footer>
+        <!-- ** include FOOTER.PHP*****-->
+        <?php include "footer.php" ?>
 
     
         <script src="<?php echo base_url(); ?>assets/js/vendor/jquery-1.11.0.min.js"></script>

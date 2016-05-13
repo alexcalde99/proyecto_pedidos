@@ -40,7 +40,7 @@ class admin extends CI_Controller {
 
 		$crud = new Grocery_CRUD();
 		$crud->set_subject('Restaurantes');
-		//primer campo, el nombre que tenemos en la tabla en la bdd
+		//DEcimos que el campo imagen sera tipo file, y le decimos la ruta donde guardará el fichero
 		$crud->set_field_upload('imagen','assets/images/');
 		//nombre de categoria en el restaurante....enla categoria restaurantes, y me sque la descruipcion
 		$crud->set_relation('id_categoria','categorias','descripcion');
@@ -52,14 +52,13 @@ class admin extends CI_Controller {
 	}
 //**********************FUNCION LISTAR CATEGIRIAS*******************************
 	public function categorias(){
-
 		$crud = new Grocery_CRUD();
 		$crud->set_subject('Categorias');
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
 	}
-	//**********************FUNCION LISTAR usuarios*******************************
+	//**********************FUNCION USUARIOS*******************************
 	public function usuarios(){
 
 		$crud = new Grocery_CRUD();
@@ -72,15 +71,18 @@ class admin extends CI_Controller {
 		$this->cargarVista($datos);
 
 	}
-	//**********************FUNCION LISTAR usuarios*******************************
+	//**********************FUNCION PRODUCTOS*******************************
 	public function productos(){
 
 		$crud = new Grocery_CRUD();
 		$crud->set_table('productos');
-		//display as_ relacionamos las tablas, un producto pertenece  a un restaurante
-		$crud->display_as('id_restaurante','Restaurante');
 		//Subject.  lo que saldra al lado del add-> add Restaurates
 		$crud->set_subject('Productos');
+		//display as_,le decimos que el campo id_restaurante nos lo saque como Restaurante
+		$crud->display_as('id_restaurante','Restaurante');
+		//DEcimos que el campo imagen sera tipo file, y le decimos la ruta donde guardará el fichero
+		$crud->set_field_upload('imagen','assets/images/');
+		$crud->display_as('imagen','Imagen(950x550)');
 		//Id de la tabla, tabla, y campo que qeremos que sea selecionado en el desplegable
 		$crud->set_relation('id_restaurante','restaurantes','nombre');
 		$datos = $crud->render();

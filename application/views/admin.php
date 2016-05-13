@@ -25,7 +25,7 @@
     <?php endforeach; ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootsrtap Free Admin Template - SIMINTA | Admin Dashboad Template</title>
+    <title>Panel de Administración pedidosaunclick.com</title>
     <!-- Core CSS - Include with every page -->
     <link href="<?php echo base_url(); ?>assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -179,6 +179,13 @@
 
     </div>
     <!-- end wrapper -->
+
+    <script src="<?php echo base_url(); ?>assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/pace/pace.js"></script>
+    <script src="<?php echo base_url(); ?>assets/scripts/siminta.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/morris/morris.js"></script>
+    <script src="<?php echo base_url(); ?>assets/scripts/dashboard-demo.js"></script>
 
     <!-- Core Scripts - Include with every page -->
     <!--
