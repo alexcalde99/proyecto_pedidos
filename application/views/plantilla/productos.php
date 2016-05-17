@@ -104,10 +104,23 @@ http://www.templatemo.com/free-website-templates/417-grill
                            echo "</div>";
                            echo "</div>";
                            echo "</div>";
+                           echo "<form method='post' action='".base_url()."productos/add_productos"."'>";
+                           echo '<input type="hidden" name="id_producto" value=" '.$producto->id.'">';
+                           echo '<input type="hidden" name="descripcion" value=" '.$producto->descripcion.'">';
+                           echo '<input type="hidden" name="precio" value=" '.$producto->precio.'">';
+                           echo "<input type=\"submit\" value=\"añadir\">";
+                           echo " </form>";
 
                         }
 
                         ?>
+
+
+
+
+<form
+
+
 
 
 <!--

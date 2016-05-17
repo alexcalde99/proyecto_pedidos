@@ -204,9 +204,9 @@ http://www.templatemo.com/free-website-templates/417-grill
                             echo " <div class=\"blog-content\">";
                             echo "<div class=\"content-show\">";
                             echo "<h4><a style='text-decoration: underline' href='".site_url('principal/listadoProductos/'.$restaurante->id)."'>$restaurante->nombre</a></h4>";
-                            echo "<span>$restaurante->direccion</span>";
+                            echo "<span class=\"fa fa-home\"> $restaurante->direccion</span>";
                             echo "<br>";
-                            echo "<span>$restaurante->telefono</span>";
+                            echo "<span class=\"fa fa-phone\" style='color: white'> $restaurante->telefono</span>";
                             echo "</div>";
                             echo "<div class=\"content-hide\">";
                             echo "<p>$restaurante->descripcion</p>";
