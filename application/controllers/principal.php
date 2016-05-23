@@ -14,14 +14,16 @@ class principal extends CI_Controller
 
         $this->load->database();
         $this->load->helper('url');
+        //cargamos la libreria carrito
+        $this->load->library('cart');
 
         $this->load->library('grocery_CRUD');
 
         date_default_timezone_set('Europe/Madrid');
-
         //models que usaremos
         $this->load->model('restaurante_model');
         $this->load->model('producto_model');
+
 
 
         //libreries
@@ -40,15 +42,5 @@ class principal extends CI_Controller
         $this->load->view('/plantilla/index',$datos);
     }
 
-
-
-    public function listadoProductos($id){
-
-        $productos = $this->producto_model->getAllProductsByID($id);
-        //le pasamos el resultado en un array
-        $datos['productos']=$productos;
-        $this->load->view('/plantilla/productos',$datos);
-
-    }
 
 }

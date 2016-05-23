@@ -20,6 +20,15 @@ class producto_model extends CI_Model{
         }
     }
 
+    //*************FUNCION OBTENER TODOS LOS PRODUCTOS *****************
+    //le pasamos un id y nos devuelve tods los productos de un mismo restaurante
+    public function getAllProducts() {
+        $sql = "SELECT * FROM `productos`";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result();
+        }
+    }
 
 
     /*public function getNumIncidencias() {

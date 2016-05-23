@@ -25,6 +25,7 @@ http://www.templatemo.com/free-website-templates/417-grill
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flexslider.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/testimonails-slider.css">
 
+
         <script src="<?php echo base_url(); ?>assetsjs/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -78,71 +79,49 @@ http://www.templatemo.com/free-website-templates/417-grill
                             </ul>
                         </div>
                     </div>
+
                     <!-- *****CONTENEDOR PRODUCTOS -->
                     <div class="row" id="Container">
+
                         <?php
 
-                        foreach($productos as $producto){
-                           echo "<div class=\"col-md-3 col-sm-6 mix portfolio-item Pizza\">";
-                           echo "<div class=\"portfolio-wrapper\"> ";
-                           echo "<div class=\"portfolio-thumb\">";
-                           echo '<img src="'.base_url()."assets/images/".$producto->imagen.'" >';
-                           echo "<div class=\"hover\">";
-                           echo "<div class=\"hover-iner\">";
+                        foreach($productos as $producto) {  ?>
 
-                           echo "<a class=\"fancybox\" href=".base_url()."assets/images/".$producto->imagen.">";
-
-                            echo '<img src="'.base_url()."assets/images/open-icon.png".'" >';
-                           echo "</a>";
-                           echo "</div>";
-                           echo "</div>";
-                           echo "</div>";
-                           echo "<div class=\"label-text\">";
-                           echo "<h3>$producto->descripcion</h3>" ;
-                           echo "<h6>$producto->ingredientes</h6>";
-                           echo "<span class=\"text-category\">$producto->precio €</span>";
-                           echo "</div>";
-                           echo "</div>";
-                           echo "</div>";
-                           echo "<form method='post' action='".base_url()."productos/add_productos"."'>";
-                           echo '<input type="hidden" name="id_producto" value=" '.$producto->id.'">';
-                           echo '<input type="hidden" name="descripcion" value=" '.$producto->descripcion.'">';
-                           echo '<input type="hidden" name="precio" value=" '.$producto->precio.'">';
-                           echo "<input type=\"submit\" value=\"añadir\">";
-                           echo " </form>";
-
-                        }
-
-                        ?>
+                            <div class="col-md-3 col-sm-6 mix portfolio-item Pizza">
+                                <div class="portfolio-wrapper">
+                                    <div class="portfolio-thumb">
+                                        <img src='<?php echo base_url().'assets/images/'.$producto->imagen ?>'>
+                                        <div class="hover">
+                                            <div class="hover-iner">
 
 
 
+                                                <a class='fancybox' href="<?php echo base_url().'assets/images/'.$producto->imagen  ?>">
 
-<form
+                                                    <img src='<?php echo base_url() . "assets/images/open-icon.png"  ?> '>
+                                                </a>
 
-
-
-
-<!--
-                        <div class="col-md-3 col-sm-6 mix portfolio-item Pizza">
-                            <div class="portfolio-wrapper">
-                                <div class="portfolio-thumb">
-                                    <img src="images/product1.jpg" alt="" />
-                                    <div class="hover">
-                                        <div class="hover-iner">
-                                            <a class="fancybox" href="images/product1_big.jpg"><img src="images/open-icon.png" alt="" /></a>
-                                            <span>Pizza</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="label-text">
-                                    <h3><a href="single-post.html">Vege Pizza</a></h3>
-                                    <span class="text-category">$16.00</span>
+                                    <div class="label-text">
+                                        <h3> <?php echo $producto->descripcion ?> </h3>
+                                        <h6> <?php  echo $producto->ingredientes ?> </h6>
+                                        <span class="text-category"> <?php echo $producto->precio ?> €</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>-->
+
+                            <form method='post' action='<?php echo site_url("productos/add") ?>'>
+                                <input type="hidden" name="id_producto" value= '<?php echo $producto->id ?>'>
+                                <input type="hidden" name="descripcion" value= '<?php echo $producto->descripcion ?>'>
+                                <input type="hidden" name="precio" value= '<?php echo $producto->precio ?>'>
+                                <input type='submit' class='btn btn-warning'>
+                                <input type="number" name="cantidad">
+                            </form>
 
 
+                        <?php } ?>
 
                     </div>
                     <!-- ***** FIN CONTENEDOR PRODUCTOS -->
@@ -174,6 +153,8 @@ http://www.templatemo.com/free-website-templates/417-grill
         <script src="<?php echo base_url(); ?>assets/js/vendor/jquery.gmap3.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/plugins.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
+
+
 
     </body>
 </html>
