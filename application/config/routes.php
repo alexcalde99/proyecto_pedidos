@@ -52,8 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'principal';
 $route['admin']='admin';
 $route['principal']='principal';
-//cuando me soliciten carrito, me llevara a carrito al metodo mostrar_carrito
-$route['carrito']='carrito';
 $route['admin/(:any)']='admin/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

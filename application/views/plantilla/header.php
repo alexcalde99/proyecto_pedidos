@@ -72,10 +72,10 @@ http://www.templatemo.com/free-website-templates/417-grill
                 <div class="col-md-6">
                     <div class="main-menu">
                         <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about-us.html">Sobre nosotros</a></li>
-                            <li><a href="products.html">Productos</a></li>
-                            <li><a href="contact-us.html">Contacto</a></li>
+                            <li><a href="<?php echo site_url('principal'); ?>">Inicio</a></li>
+                            <li><a href="<?php echo site_url('principal/sobre_nosotros'); ?>">Sobre nosotros</a></li>
+                            <li><a href="<?php echo site_url('principal/promociones'); ?>">Promociones</a></li>
+                            <li><a href="<?php echo site_url('principal/contacto'); ?>">Contacto</a></li>
                         </ul>
                     </div>
                 </div>

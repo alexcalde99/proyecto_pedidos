@@ -29,6 +29,12 @@ class admin extends CI_Controller {
 		$this->load->view('login');
 	}
 
+	public function sobre_nosotros(){
+
+		$this->load->view('/plantilla/sobre_nosotros');
+
+	}
+
 
 
 
@@ -37,7 +43,6 @@ class admin extends CI_Controller {
 
 	//**********************FUNCION LISTAR RESTAURANTES*******************************
 	public function restaurantes(){
-
 		$crud = new Grocery_CRUD();
 		$crud->set_subject('Restaurantes');
 		//DEcimos que el campo imagen sera tipo file, y le decimos la ruta donde guardará el fichero
@@ -48,7 +53,6 @@ class admin extends CI_Controller {
 		$crud->display_as('imagen','Imagen(373x253)');
 		$datos = $crud->render();
 		$this->cargarVista($datos);
-
 	}
 //**********************FUNCION LISTAR CATEGIRIAS*******************************
 	public function categorias(){
@@ -71,7 +75,7 @@ class admin extends CI_Controller {
 		$this->cargarVista($datos);
 
 	}
-	//**********************FUNCION PRODUCTOS*******************************
+	//**********************FUNCION CRUD PRODUCTOS*******************************
 	public function productos(){
 
 		$crud = new Grocery_CRUD();
@@ -85,6 +89,24 @@ class admin extends CI_Controller {
 		$crud->display_as('imagen','Imagen(950x550)');
 		//Id de la tabla, tabla, y campo que qeremos que sea selecionado en el desplegable
 		$crud->set_relation('id_restaurante','restaurantes','nombre');
+		$datos = $crud->render();
+		$this->cargarVista($datos);
+
+	}
+	//**********************FUNCION CRUD PROMOCIONES*******************************
+	public function promociones(){
+
+		$crud = new Grocery_CRUD();
+		$crud->set_table('promociones');
+		//Subject.  lo que saldra al lado del add-> add Restaurates
+		$crud->set_subject('Prmociones');
+		//display as_,le decimos que el campo id_restaurante nos lo saque como Restaurante
+		$crud->display_as('id_restaurante','Restaurante');
+		//Relacionamos las tablas...una promocion pertenece a un restaurante Id de la tabla, tabla, y campo que qeremos que sea selecionado en el desplegable
+		$crud->set_relation('id_restaurante','restaurantes','nombre');
+		//DEcimos que el campo imagen sera tipo file, y le decimos la ruta donde guardará el fichero
+		$crud->set_field_upload('imagen','assets/images/');
+		$crud->display_as('imagen');
 		$datos = $crud->render();
 		$this->cargarVista($datos);
 
@@ -123,7 +145,7 @@ class admin extends CI_Controller {
 
 	public function logout(){
 		$this->session->unset_userdata('usuario');
-		header("Location: http://localhost:8080/proyecto_DAW/admin");
+		header("Location: http://localhost/pedidosaunclick/admin");
 	}
 
 

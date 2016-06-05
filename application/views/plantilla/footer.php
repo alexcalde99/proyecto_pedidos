@@ -50,8 +50,8 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="subscribe-form">
                         <span>Suscríbete a nuestro newsletter</span>
 
-                        <form method="POST" class="subscribeForm">
-                            <input id="subscribe" type="text"/>
+                        <form method="POST" class="subscribeForm" action="<?php echo site_url('principal/newsletter'); ?>">
+                            <input id="subscribe" type="email" name="email"/>
                             <input type="submit" id="submitButton"/>
                         </form>
                     </div>
@@ -95,38 +95,25 @@ http://www.templatemo.com/free-website-templates/417-grill
                 </div>
                 <div class="col-md-3">
                     <div class="recent-posts">
-                        <h4 class="footer-title">Recent posts</h4>
+                        <h4 class="footer-title">Haz tu pedido!</h4>
 
                         <div class="recent-post">
                             <div class="recent-post-thumb">
-                                <img src="<?php echo base_url(); ?>assets/images/recent-post1.jpg" alt="">
-                            </div>
-                            <div class="recent-post-info">
-                                <h6><a href="#">Delicious and Healthy Menus</a></h6>
-                                <span>24/12/2084</span>
+                                <img src="<?php echo base_url(); ?>assets/images/haztupedido.png" alt="">
                             </div>
                         </div>
-                        <div class="recent-post">
-                            <div class="recent-post-thumb">
-                                <img src="<?php echo base_url(); ?>assets/images/recent-post2.jpg" alt="">
-                            </div>
-                            <div class="recent-post-info">
-                                <h6><a href="#">Simple and effective meals</a></h6>
-                                <span>18/12/2084</span>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="more-info">
-                        <h4 class="footer-title">More info</h4>
+                        <h4 class="footer-title">Más información</h4>
 
-                        <p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id
-                            elit.</p>
+                        <p>Contacta con nosotros</p>
                         <ul>
-                            <li><i class="fa fa-phone"></i>010-020-0340</li>
-                            <li><i class="fa fa-globe"></i>123 Dagon Studio, Yakin Street, Digital Estate</li>
-                            <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
+                            <li><i class="fa fa-phone"></i>902.23.44.56</li>
+                            <li><i class="fa fa-home"></i>Calle Madrid 12, Gandia , Valencia</li>
+                            <li><i class="fa fa-envelope"></i><a href="#">email@email.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -134,7 +121,7 @@ http://www.templatemo.com/free-website-templates/417-grill
         </div>
         <div class="bottom-footer">
             <p>
-                        	<span>Copyright © 2084 <a href="#">Your Company Name</a>
+                        	<span>Copyright © 2016 <a href="#">pedidosaunclick S.L</a>
                             | Design: <a rel="nofollow" href="http://www.templatemo.com" target="_parent"><span
                                         class="blue">template</span><span class="green">mo</span></a></span>
             </p>

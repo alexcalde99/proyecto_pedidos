@@ -72,9 +72,9 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="main-menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="../../application/views/plantilla/sobre_nosotros.php">About</a></li>
                             <li><a href="products.html">Products</a></li>
-                            <li><a href="contact-us.html">Contact</a></li>
+                            <li><a href="../../application/views/plantilla/contacto.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -101,7 +101,7 @@ http://www.templatemo.com/free-website-templates/417-grill
 
                     <p>Donec justo dui, semper vitae aliquam euzali, ornare pretium enim. Maecenas molestie diam
                         <br><br>eget tellus luctus fermentum.</p>
-                    <a href="single-post.html">Shop Now</a>
+                    <a href="../../application/views/plantilla/promociones.php">Shop Now</a>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/images/slide1.jpg" alt=""/>
             </li>
@@ -111,7 +111,7 @@ http://www.templatemo.com/free-website-templates/417-grill
 
                     <p>Nulla id iaculis ligula. Vivamus mattis quam eget urna tincidunt consequat. Nullam
                         <br><br>consectetur tempor neque vitae iaculis. Aliquam erat volutpat.</p>
-                    <a href="single-post.html">More Details</a>
+                    <a href="../../application/views/plantilla/promociones.php">More Details</a>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/images/slide2.jpg" alt=""/>
             </li>
@@ -121,7 +121,7 @@ http://www.templatemo.com/free-website-templates/417-grill
 
                     <p>Maecenas fermentum est ut elementum vulputate. Ut vel consequat urna. Ut aliquet
                         <br><br>ornare massa, quis dapibus quam condimentum id.</p>
-                    <a href="single-post.html">Get Ready</a>
+                    <a href="../../application/views/plantilla/promociones.php">Get Ready</a>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/images/slide3.jpg" alt=""/>
             </li>

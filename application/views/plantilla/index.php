@@ -12,7 +12,7 @@ http://www.templatemo.com/free-website-templates/417-grill
 -->
     <head>
         <meta charset="utf-8">
-        <title>Grill Responsive Web Template</title>
+        <title>Pedidos a un click | Pedidos online de los mejores restaurantes de Gandia</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         
@@ -35,87 +35,40 @@ http://www.templatemo.com/free-website-templates/417-grill
         <!-- *****INCLUDE HEADER PHP -->
         <?php include "header.php"; ?>
 
-            <!--<header>
-                <div id="top-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="home-account">
-                                    <a href="#">Home</a>
-                                    <a href="#">My account</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="cart-info">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    (<a href="#">5 items</a>) in your cart (<a href="#">$45.80</a>)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="main-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="logo">
-                                    <a href="#"><img src="<?php /*echo base_url(); */?>assets/images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="main-menu">
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about-us.html">About</a></li>
-                                        <li><a href="products.html">Products</a></li>
-                                        <li><a href="contact-us.html">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="search-box">  
-                                    <form name="search_form" method="get" class="search_form">
-                                        <input id="search" type="text" />
-                                        <input type="submit" id="search-button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>-->
-            
+            <div><?php
+                //si no esta vacia, muestralo
+                if(!empty($respuesta)){
+                    echo $respuesta;
+                }
+                 ?></div>
 
             <div id="slider">
                 <div class="flexslider">
                   <ul class="slides">
                     <li>
                         <div class="slider-caption">
-                            <h1>Delicious Meals</h1>
-                            <p>Donec justo dui, semper vitae aliquam euzali, ornare pretium enim. Maecenas molestie diam
-                            <br><br>eget tellus luctus fermentum.</p>
-                            <a href="single-post.html">Shop Now</a>
+                            <h1>Pide comida a domicilio online</h1>
+                            <p>Todos los restaurantes de Gandia a solo un click.</p>
+                            <a href="#restaurantes"><span>Restaurantes</span></a>
                         </div>
                       <img src="<?php echo base_url(); ?>assets/images/slide1.jpg" alt="" />
                     </li>
-                    <li>
-                        <div class="slider-caption">
-                            <h1>Ice-cream Menus</h1>
-                            <p>Nulla id iaculis ligula. Vivamus mattis quam eget urna tincidunt consequat. Nullam 
-                            <br><br>consectetur tempor neque vitae iaculis. Aliquam erat volutpat.</p>
-                            <a href="single-post.html">More Details</a>
-                        </div>
-                      <img src="<?php echo base_url(); ?>assets/images/slide2.jpg" alt="" />
-                    </li>
-                    <li>
-                        <div class="slider-caption">
-                            <h1>Healthy Drinks</h1>
-                            <p>Maecenas fermentum est ut elementum vulputate. Ut vel consequat urna. Ut aliquet 
-                            <br><br>ornare massa, quis dapibus quam condimentum id.</p>
-                            <a href="single-post.html">Get Ready</a>
-                        </div>
-                      <img src="<?php echo base_url(); ?>assets/images/slide3.jpg" alt="" />
-                    </li>
+                      <li>
+                          <div class="slider-caption">
+                              <h1>Pide comida a domicilio online</h1>
+                              <p>Todos los restaurantes de Gandia a solo un click.</p>
+                              <a href="#restaurantes"><span>Restaurantes</span></a>
+                          </div>
+                          <img src="<?php echo base_url(); ?>assets/images/slide2.jpg" alt="" />
+                      </li>
+                      <li>
+                          <div class="slider-caption">
+                              <h1>Pide comida a domicilio online</h1>
+                              <p>Todos los restaurantes de Gandia a solo un click.</p>
+                              <a href="#restaurantes"><span>Restaurantes</span></a>
+                          </div>
+                          <img src="<?php echo base_url(); ?>assets/images/slide3.jpg" alt="" />
+                      </li>
                   </ul>
                 </div>
             </div>
@@ -128,6 +81,18 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
+                                <div align="center">
+                                    <img src="<?php base_url(); ?>assets/images/proceso.png">
+                                    <p style="font-family: 'Lato', sans-serif;font-size: medium;margin-top: 10px">
+                                        <span style="color: orange">Pedidos a un click</span> te propone la mejor y más rápida forma
+                                        de pedir comida a domicilio online de los mejores restaurantes de la Cuidad de Gandia.
+                                        Pponemos a disposición nuestro servicio de "Take Away" donde podrás disfrutar de una gran variedad
+                                        de platos y cocinas del mundo, aptas para los paladares más exigentes. Disfruta de todos
+                                        los tipos de restaurantes de Gandia en la comidad e tu salón. Ofrecemos la oportunidad de hacer
+                                        el pago con uno de los sistemas más seguros del mundo, Paypal.
+                                        ¡No dudes en darle al click!
+                                    </p>
+                                </div>
                                 <h2>Pedidos a un click</h2>
                                 <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
@@ -139,8 +104,9 @@ http://www.templatemo.com/free-website-templates/417-grill
                                 <div class="icon">
                                     <i class="fa fa-pencil"></i>
                                 </div>
-                                <h4>Haz tu pedido</h4>
-                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                                <h4>Fácil de usar</h4>
+                                <p>Búsqueda tu plato favorito entre todos nuestros restaurantes y con solo un click recibelo en
+                                    puerta de tu casa u oficina </p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -149,7 +115,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     <i class="fa fa-bullhorn"></i>
                                 </div>
                                 <h4>Promociones</h4>
-                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                                <p>Subscribete a nuestro newsletter y recibe grandes ofertas y promociones.</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -157,8 +123,9 @@ http://www.templatemo.com/free-website-templates/417-grill
                                 <div class="icon">
                                     <i class="fa fa-bell"></i>
                                 </div>
-                                <h4>Recíbelo en casa</h4>
-                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                                <h4>La mejor opción</h4>
+                                <p>Mismo precio que si pidieras al restaurante. Miles de platos diferentes
+                                    entre los que elegir</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -167,7 +134,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     <i class="fa fa-heart"></i>
                                 </div>
                                 <h4>Satisfacción</h4>
-                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                                <p>Garantia 100% en nuestros productos.Revisa las opiniones de nuestros usuarios satisfechos</p>
                             </div>
                         </div>
                     </div>
@@ -193,6 +160,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                     //se genera automaticamente desde la base de datos
                     -->
                     <div class="row">
+                        <a name="restaurantes"></a>
                         <?php
                         foreach($restaurantes as $restaurante){
                             //del restarante cojemos el nombre telefono etc......
@@ -218,22 +186,7 @@ http://www.templatemo.com/free-website-templates/417-grill
 
                         ?>
 
-                       <!-- <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="<?php /*echo base_url(); */?>assets/images/blogpost2.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="single-post.html">New Great Taste</a></h4>
-                                        <span>23 Sep 2084</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
+
 
                     </div>
                 </div>
