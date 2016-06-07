@@ -68,7 +68,7 @@
             <!-- end navbar-top-links -->
 
         </nav>
-        <!-- end navbar top -->
+        <!-- end navbar toph -->
 
         <!-- navbar side -->
         <nav class="navbar-default navbar-static-side" role="navigation">
