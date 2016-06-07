@@ -63,26 +63,32 @@ http://www.templatemo.com/free-website-templates/417-grill
                     </div>
                     
                     <div class="row">
-                        <div class="col-md-6">
-                        	<h3>Nuestra empresa</h3>
-                            <p>Pedidosaunclick es una empresa que ofrece el servicio de comida a Domicilio Online de los mejores restaurantes de la
+                        <div class="col-md-12">
+                            <div align="center">
+                        	<h1 style="color: orange">Nuestra empresa</h1>
+                            </div>
+                            <p style="font-size: large">Pedidosaunclick es una empresa que ofrece el servicio de comida a Domicilio Online de los mejores restaurantes de la
                                 cuidad de Gandia.Es una empresa joven , dinámica y casual que sigue creciendo cada día y esforzandose para satisfacer
                                 siempre las necesidades de los clientes.no incurre en Gastos Adicionales ni incremento en los costos de los productos ofrecidos por cada uno de los restaurantes Aquí Publicados.
                                </p>
                         </div>
-                        <div class="col-md-6">
-                        	<h3>Team Management</h3>
-                            <p>Suspendisse quis consectetur nisi, vitae consequat sem. In et quam id libero venenatis venenatis. Morbi vitae justo vulputate, auctor augue eu, pulvinar augue. Vestibulum placerat sem eu posuere laoreet. Ut ac ex nec urna maximus tristique interdum eget ipsum. Duis at pharetra neque, ut condimentum ex. Nunc tincidunt magna nec aliquam rhoncus. Morbi a posuere nunc.</p>
+
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                        <div align="center">
+                        <img src="<?php echo base_url() . "assets/images/Logo-Click.jpg"?>">
                         </div>
+                    </div>
                     </div>
                     
                     <div class="space50"></div>
                     
                     <div class="row">
-                        <div class="col-md-2 col-sm-4">
+                        <!--<div class="col-md-2 col-sm-4">
                             <div class="timeline-thumb">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/timeline1.jpg" alt="">
+                                    <img src="<?php /*echo base_url(); */?>assets/images/timeline1.jpg" alt="">
                                 </div>
                                 <div class="overlay">
                                     <div class="timeline-caption">
@@ -95,7 +101,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-2 col-sm-4">
                             <div class="timeline-thumb">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/timeline2.jpg" alt="">
+                                    <img src="<?php /*echo base_url(); */?>assets/images/timeline2.jpg" alt="">
                                 </div>
                                 <div class="overlay">
                                     <div class="timeline-caption">
@@ -108,7 +114,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-2 col-sm-4">
                             <div class="timeline-thumb">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/timeline3.jpg" alt="">
+                                    <img src="<?php /*echo base_url(); */?>assets/images/timeline3.jpg" alt="">
                                 </div>
                                 <div class="overlay">
                                     <div class="timeline-caption">
@@ -121,7 +127,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-2 col-sm-4">
                             <div class="timeline-thumb">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/timeline4.jpg" alt="">
+                                    <img src="<?php /*echo base_url(); */?>assets/images/timeline4.jpg" alt="">
                                 </div>
                                 <div class="overlay">
                                     <div class="timeline-caption">
@@ -134,7 +140,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-2 col-sm-4">
                             <div class="timeline-thumb">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/timeline5.jpg" alt="">
+                                    <img src="<?php /*echo base_url(); */?>assets/images/timeline5.jpg" alt="">
                                 </div>
                                 <div class="overlay">
                                     <div class="timeline-caption">
@@ -147,7 +153,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="col-md-2 col-sm-4">
                             <div class="timeline-thumb">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/images/timeline6.jpg" alt="">
+                                    <img src="<?php /*echo base_url(); */?>assets/images/timeline6.jpg" alt="">
                                 </div>
                                 <div class="overlay">
                                     <div class="timeline-caption">
@@ -156,7 +162,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                      </div>
                                  </div>
                              </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -167,7 +173,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Our Team</h2>
+                                <h2>Nuestro Equipo</h2>
                                 <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>

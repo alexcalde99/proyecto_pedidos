@@ -161,10 +161,10 @@ class principal extends CI_Controller
         if($this->email->send()){
             $this->session->set_flashdata('envio', 'Email enviado correctamente');
         }else{
-            $this->session->set_flashdata('envio', 'No se a enviado el email');
+            $this->session->set_flashdata('envio', '<div class="alert alert-success" role="alert">Mensaje enviado</div>');
         }
 
-        redirect(site_url('principal/promociones'));
+        redirect(site_url('principal/contacto'));
     }
 
 

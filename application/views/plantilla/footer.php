@@ -73,23 +73,19 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="about">
                         <h4 class="footer-title">About Grill</h4>
 
-                        <p>Grill is free HTML5 template by <span class="blue">template</span><span
-                                class="green">mo</span> and it is a free responsive bootstrap layout that can be applied
-                            for any purpose.
-                            <br><br>Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for photos
-                            used in this template. Nam commodo erat quis ligula placerat viverra.</p>
+                        <p><a rel="nofollow" href="#">pedidosaunclick.com</a>
+                            es una empresa que ofrece el servicio de comida a Domicilio Online de los mejores restaurantes de la cuidad de Gandia.Es una empresa joven , dinámica y casual que sigue creciendo cada día.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="shop-list">
                         <h4 class="footer-title">Categorias</h4>
                         <ul>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>New Grill Menu</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Healthy Fresh Juices</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Spicy Delicious Meals</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Simple Italian Pizzas</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Pure Good Yogurts</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Ice-cream for kids</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Mediterranea</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Tradicional</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Italiana</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Oriental</a></li>
                         </ul>
                     </div>
                 </div>
@@ -113,7 +109,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <ul>
                             <li><i class="fa fa-phone"></i>902.23.44.56</li>
                             <li><i class="fa fa-home"></i>Calle Madrid 12, Gandia , Valencia</li>
-                            <li><i class="fa fa-envelope"></i><a href="#">email@email.com</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="#">info@pedidosaunclick.com</a></li>
                         </ul>
                     </div>
                 </div>

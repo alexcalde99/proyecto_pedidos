@@ -41,8 +41,8 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-content">
-                                <h2>Contact Us</h2>
-                                <span>Home / <a href="contacto.php">Contact Us</a></span>
+                                <h2 style="color: orange">Contacto</h2>
+
                             </div>
                         </div>
                     </div>
@@ -55,8 +55,8 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Feel free to send a message</h2>
-                                <img src="../../../TEMPLATE/templatemo_417_grill/images/under-heading.png" alt="" >
+                                <h2>CONTACTA CON NOSOTROS</h2>
+                                <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
                     </div>
@@ -74,8 +74,13 @@ http://www.templatemo.com/free-website-templates/417-grill
                                                     <input type="text" name="asunto" /><br/>
                                                     Mensaje:<br/>
                                                     <textarea name="mensaje"></textarea><br/>
-                                                    <input type="submit" name="submit" value="Enviar"/>
+                                                    <input type="submit" name="submit" style="background-color: orange;color: white" value="Enviar" onclick="mensajeok()"/>
                                                 </form>
+                                                <script>
+                                                    function mensajeok (){
+                                                        <?php echo "esdd" ?>
+                                                    }
+                                                </script>
                                                 <?php
                                                 if($this->session->flashdata('envio')){
                                                     echo $this->session->flashdata('envio');
@@ -85,11 +90,11 @@ http://www.templatemo.com/free-website-templates/417-grill
                                         </div>
                                         <div class="col-md-4">
                                             <div class="info">
-                                                <p>Duis at pharetra neque, ut condimentum, purus nisl pretium quam, in pulvinar velit massa id elit. </p>
+                                                <p>Ante cualquier duda, no dudes en contactar con nosotros. </p>
                                                 <ul>
-                                                    <li><i class="fa fa-phone"></i>090-080-0760</li>
-                                                    <li><i class="fa fa-globe"></i>456 New Dagon City Studio, Yankinn, Digital Estate</li>
-                                                    <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
+                                                    <li><i class="fa fa-phone"></i>902.23.44.56</li>
+                                                    <li><i class="fa fa-globe"></i>Calle Madrid 12, Gandia , Valencia</li>
+                                                    <li><i class="fa fa-envelope"></i><a href="#">info@pedidosaunclick.com</a></li>
                                                 </ul>
                                             </div>
                                         </div>     
@@ -101,8 +106,8 @@ http://www.templatemo.com/free-website-templates/417-grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Find Us On Map</h2>
-                                <img src="../../../TEMPLATE/templatemo_417_grill/images/under-heading.png" alt="" >
+                                <h2>Encuentranos en el mapa</h2>
+                                <img src="<?php echo base_url(); ?>assets/images/under-heading.png" alt="" >
                             </div>
                         </div>
                     </div>
@@ -134,7 +139,7 @@ http://www.templatemo.com/free-website-templates/417-grill
         function initialize()
         {
 			var map_options = {
-			  center: new google.maps.LatLng(16.8496189,96.1288854),
+			  center: new google.maps.LatLng(38.976427,-0.1909041),
 			  zoom: 15,
 			  mapTypeId:google.maps.MapTypeId.ROADMAP
 			  };

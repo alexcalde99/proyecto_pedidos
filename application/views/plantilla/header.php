@@ -47,17 +47,18 @@ http://www.templatemo.com/free-website-templates/417-grill
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="home-account">
+                    <h6 style="color: #1f1d1d">_</h6>
+                    <!--<div class="home-account">
                         <a href="#">Home</a>
                         <a href="#">My account</a>
-                    </div>
+                    </div>-->
                 </div>
-                <div class="col-md-6">
+                <!--<div class="col-md-6">
                     <div class="cart-info">
                         <i class="fa fa-shopping-cart"></i>
                         (<a href="#">5 items</a>) in your cart (<a href="#">$45.80</a>)
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -66,7 +67,7 @@ http://www.templatemo.com/free-website-templates/417-grill
             <div class="row">
                 <div class="col-md-3">
                     <div class="logo">
-                        <a href="#"><img src="<?php echo base_url(); ?>assets/images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
+                        <a href="#"><img src="<?php echo base_url(); ?>assets/images/Logo-Click2.jpg" title="Grill Template" alt="Grill Website Template" ></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -81,10 +82,10 @@ http://www.templatemo.com/free-website-templates/417-grill
                 </div>
                 <div class="col-md-3">
                     <div class="search-box">
-                        <form name="search_form" method="get" class="search_form">
+                        <!--<form name="search_form" method="get" class="search_form">
                             <input id="search" type="text" />
                             <input type="submit" id="search-button" />
-                        </form>
+                        </form>-->
                     </div>
                 </div>
             </div>

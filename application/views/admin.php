@@ -61,7 +61,7 @@
                 <a href="<?php echo site_url('admin/logout')?>"><i class="fa fa-sign-out"></i>Logout</a>
                 </li>
                 <li>
-                    <a href="<?php echo site_url('principal/index') ?>"><i class="fa fa-globe"></i>Ver WEB</a>
+                    <a href="<?php echo site_url('principal/') ?>"><i class="fa fa-globe"></i>Ver WEB</a>
                 </li>
                 <!-- end main dropdown -->
             </ul>

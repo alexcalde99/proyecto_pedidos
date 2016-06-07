@@ -48,6 +48,7 @@
 
             window.location = "<?php echo site_url('carrito/billing_view') ?>";
         }
+
     </script>
     <style>
 
@@ -137,7 +138,16 @@
                     <?php
 // Create form and send all values in "shopping/update_cart" function.
                     echo form_open('carrito/update_cart');
-                    $grand_total = 0;
+                    foreach ($productos as $producto) {
+
+                        ?>
+
+                   <input type='hidden' name='id_restaurante' value='<?php echo $producto->id_restaurante ?>'>
+
+                     <?php } ?>
+
+                    <?php
+                     $grand_total = 0;
                     $i = 1;
 
                     foreach ($cart as $item):

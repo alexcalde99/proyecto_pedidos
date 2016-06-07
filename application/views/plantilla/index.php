@@ -209,22 +209,22 @@ http://www.templatemo.com/free-website-templates/417-grill
                               <ul class="slides">
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                        <h6>Jennifer - <a href="#">Chief Designer</a></h6>
+                                        <p>Excelente trabajo, gracias a ellos he aumentado mis ventas y he porporcionado a mis clientes un trabajo que no tenia.</p>
+                                        <h6>Eduardo - <a href="#">Pizzeria & Restaurante La Gondola</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-                                        <h6>Laureen - <a href="#">Marketing Executive</a></h6>
+                                        <p>Estoy muy satisfecho con el servicio que me ofrece pedidosaunclick.com ya que ha mejorado mis ventas mensuales.</p>
+                                        <h6>Andrés - <a href="#">Restaurante La presumida</a></h6>
                                     </div> 
                                 </li>
-                                <li>
+                                <!--<li>
                                     <div class="testimonails-content">
                                         <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
                                         <h6>Tanya - <a href="#">Creative Director</a></h6>
                                     </div>
-                                </li>
+                                </li>-->
                               </ul>
                             </div>
                         </div>
